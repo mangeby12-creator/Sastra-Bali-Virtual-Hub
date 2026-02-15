@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sastra Bali Virtual Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .bali-gradient {
+            background: linear-gradient(135deg, #d4a017 0%, #8b4513 100%);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .aksara-font {
+            font-size: 1.5rem;
+            color: #8b4513;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4a017;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-amber-700 flex items-center">
+                        <i class="fas fa-om mr-2"></i>Virtual Hub
+                    </span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
+                    <a href="#beranda" class="hover:text-amber-700 transition">Beranda</a>
+                    <a href="#konten" class="hover:text-amber-700 transition">Konten Kreatif</a>
+                    <a href="#komunitas" class="hover:text-amber-700 transition">Komunitas</a>
+                    <a href="#pustaka" class="hover:text-amber-700 transition">Pustaka</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="hidden sm:flex items-center bg-amber-100 px-4 py-1 rounded-full text-amber-800 font-bold border border-amber-200">
+                        <i class="fas fa-star mr-2"></i> 1,250 Poin
+                    </div>
+                    <button class="md:hidden text-amber-800 text-2xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="beranda" class="bali-gradient text-white py-20 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pointer-events-none flex justify-center items-center">
+             <i class="fas fa-om text-[20rem]"></i>
+        </div>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Ngajegang Basa, Aksara, lan Sastra Bali</h1>
+            <p class="text-xl md:text-2xl opacity-90 mb-10 text-amber-100 max-w-3xl mx-auto">
+                Platform digital inovatif: Nyatunggilang tradisi leluhur sareng teknologi modern ring era milenial.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-white text-amber-800 px-10 py-4 rounded-xl font-bold shadow-xl hover:bg-amber-50 transition transform hover:scale-105">
+                    Mulai Malajah
+                </button>
+                <button class="border-2 border-white px-10 py-4 rounded-xl font-bold hover:bg-white hover:text-amber-800 transition transform hover:scale-105">
+                    Gabung Komunitas
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-16">
+        
+        <!-- Gamification Badges Section -->
+        <section class="mb-20">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-8">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 flex items-center">
+                        <i class="fas fa-award text-amber-500 mr-3"></i> Pencapaian Saya
+                    </h2>
+                    <p class="text-gray-500 mt-2">Kumpulkan poin saking aktivitas malajah lan berbagi konten.</p>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <span class="text-sm font-semibold text-amber-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-md">
+                        Level 4: Penulis Madya
+                    </span>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Badge 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition text-center border-t-8 border-amber-500 card-hover">
+                    <div class="text-5xl mb-4 grayscale-0">📜</div>
+                    <h3 class="font-bold text-gray-800 text-lg">Sastra Muda</h3>
+                    <p class="text-sm text-gray-500 mt-2">Selesai 5 Artikel</p>
+                    <div class="w-full bg-gray-200 h-2 mt-4 rounded-full">
+                        <div class="bg-amber-500 h-2 rounded-full w-full"></div>
+                    </div>
+                </div>
+                <!-- Badge 2 (Locked) -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center border-t-8 border-gray-300 opacity-70 relative">
+                    <div class="absolute top-4 right-4 text-gray-400"><i class="fas fa-lock"></i></div>
+                    <div class="text-5xl mb-4 grayscale">🖋️</div>
+                    <h3 class="font-bold text-gray-400 text-lg">Panyurat Lontar</h3>
+                    <p class="text-sm text-gray-400 mt-2">Butuh 10 Opini</p>
+                    <div class="w-full bg-gray-100 h-2 mt-4 rounded-full">
+                        <div class="bg-gray-300 h-2 rounded-full w-1/3"></div>
+                    </div>
+                </div>
+                <!-- Badge 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition text-center border-t-8 border-amber-500 card-hover">
+                    <div class="text-5xl mb-4">💬</div>
+                    <h3 class="font-bold text-gray-800 text-lg">Juru Raos</h3>
+                    <p class="text-sm text-gray-500 mt-2">Aktif Diskusi</p>
+                    <div class="w-full bg-gray-200 h-2 mt-4 rounded-full">
+                        <div class="bg-amber-500 h-2 rounded-full w-3/4"></div>
+                    </div>
+                </div>
+                <!-- Badge 4 (Locked) -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center border-t-8 border-gray-300 opacity-70 relative">
+                    <div class="absolute top-4 right-4 text-gray-400"><i class="fas fa-lock"></i></div>
+                    <div class="text-5xl mb-4 grayscale">🎓</div>
+                    <h3 class="font-bold text-gray-400 text-lg">Sastra Ahli</h3>
+                    <p class="text-sm text-gray-400 mt-2">Status Spesialis</p>
+                    <div class="w-full bg-gray-100 h-2 mt-4 rounded-full">
+                        <div class="bg-gray-300 h-2 rounded-full w-0"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transliteration Section -->
+        <section id="pustaka" class="mb-20">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-amber-100 flex flex-col lg:flex-row">
+                <div class="lg:w-1/3 bali-gradient p-10 text-white flex flex-col justify-center">
+                    <h2 class="text-3xl font-bold mb-4">Salin Aksara Bali</h2>
+                    <p class="opacity-80 leading-relaxed">
+                        Ubah tulisan Latin dados Aksara Bali secara instan. Fitur puniki memudahkan yowana malajah tata cara nulis aksara ring era digital.
+                    </p>
+                    <div class="mt-8 flex items-center text-amber-200">
+                        <i class="fas fa-keyboard text-4xl mr-4"></i>
+                        <span class="text-sm italic">Mendukung Standar Unicode Internasional</span>
+                    </div>
+                </div>
+                <div class="lg:w-2/3 p-10">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-3 uppercase tracking-wider">Ketik Kalimat Latin</label>
+                            <textarea id="latinInput" class="w-full p-5 border-2 border-gray-100 rounded-2xl h-48 focus:border-amber-500 focus:ring-0 outline-none transition resize-none text-lg shadow-inner bg-gray-50" placeholder="Contoh: Om Swastyastu..."></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-3 uppercase tracking-wider">Hasil Aksara Bali</label>
+                            <div id="aksaraOutput" class="w-full p-5 bg-amber-50 border-2 border-dashed border-amber-200 rounded-2xl h-48 flex items-center justify-center aksara-font text-center leading-loose">
+                                ᬑᬁ ᬲ᭄ᬯᬲ᭄ᬢ᭄ᬬᬲ᭄ᬢᬸ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex justify-end">
+                         <button class="bg-amber-700 text-white px-6 py-2 rounded-lg font-medium hover:bg-amber-800 transition">
+                             <i class="fas fa-copy mr-2"></i>Salin Hasil
+                         </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creative Content Section -->
+        <section id="konten">
+            <div class="flex justify-between items-center mb-10">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800">Konten Kreatif Terkini</h2>
+                    <div class="h-1.5 w-20 bg-amber-500 mt-2 rounded-full"></div>
+                </div>
+                <a href="#" class="text-amber-700 font-bold hover:text-amber-900 transition flex items-center">
+                    Lihat Semua <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-50 card-hover flex flex-col">
+                    <div class="h-52 bg-gray-800 relative group">
+                        <img src="https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition" alt="Bali Art">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-play-circle text-6xl text-white opacity-80 group-hover:scale-110 transition cursor-pointer"></i>
+                        </div>
+                        <span class="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Video</span>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">Sinom ring Era Modern</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">Visualisasi tembang macapat kanthi sentuhan sinematik milenial mangda prasida kasenengin.</p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="bg-amber-100 text-amber-800 font-bold text-xs px-3 py-1 rounded-md border border-amber-200">+50 Poin</span>
+                            <button class="text-white bg-amber-700 px-6 py-2 rounded-lg text-sm font-semibold hover:bg-amber-800 shadow-md transition">Tonton</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-50 card-hover flex flex-col">
+                    <div class="h-52 bg-amber-700 relative flex flex-col items-center justify-center p-6 text-white text-center">
+                        <div class="text-4xl mb-3">ᬲᬸᬓ᭄ᬱ᭄ᬫ</div>
+                        <p class="text-sm opacity-80">Tebak kosa basa Bali Alus ring sor puniki...</p>
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Kuis</span>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">Tebak Kruna Basa Bali</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">Uji pemahaman kruna alus singgih lan alus sor mangda pasih mabaos Bali Alus.</p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="bg-amber-100 text-amber-800 font-bold text-xs px-3 py-1 rounded-md border border-amber-200">+100 Poin</span>
+                            <button class="text-white bg-amber-700 px-6 py-2 rounded-lg text-sm font-semibold hover:bg-amber-800 shadow-md transition">Mulai Kuis</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-50 card-hover flex flex-col">
+                    <div class="h-52 bg-gray-100 relative group flex items-center justify-center">
+                        <i class="fas fa-book-open text-7xl text-amber-100 group-hover:scale-110 transition"></i>
+                        <span class="absolute top-4 left-4 bg-green-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Artikel</span>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">Etika Digital Mebasa Bali</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">Tata cara mebasa Bali sane patut lan sopan ring kolom komentar media sosial.</p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="bg-amber-100 text-amber-800 font-bold text-xs px-3 py-1 rounded-md border border-amber-200">+30 Poin</span>
+                            <button class="text-white bg-amber-700 px-6 py-2 rounded-lg text-sm font-semibold hover:bg-amber-800 shadow-md transition">Baca</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-gray-800 pb-12">
+            <div class="md:col-span-2">
+                <h4 class="text-2xl font-bold mb-6 flex items-center">
+                    <i class="fas fa-om text-amber-500 mr-3"></i> Sastra Bali Virtual Hub
+                </h4>
+                <p class="text-gray-400 max-w-md leading-relaxed">
+                    Platform percontohan bagi pelestarian budaya Bali di era digital. Membangun masa depan tanpa melupakan akar tradisi leluhur melalui teknologi dan kreativitas konten.
+                </p>
+                <div class="mt-8 flex space-x-6 text-2xl">
+                    <a href="#" class="text-gray-400 hover:text-amber-500 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-500 transition"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-500 transition"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-500 transition"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6 border-l-4 border-amber-500 pl-4 uppercase tracking-widest text-sm">Navigasi</h4>
+                <ul class="text-gray-400 space-y-3 font-medium">
+                    <li><a href="#" class="hover:text-white transition">Daftar Konten</a></li>
+                    <li><a href="#" class="hover:text-white transition">Kamus Basa Bali</a></li>
+                    <li><a href="#" class="hover:text-white transition">Forum Diskusi</a></li>
+                    <li><a href="#" class="hover:text-white transition">Unduh Aksara</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6 border-l-4 border-amber-500 pl-4 uppercase tracking-widest text-sm">Bantuan</h4>
+                <ul class="text-gray-400 space-y-3 font-medium">
+                    <li><a href="#" class="hover:text-white transition">Panduan Pengguna</a></li>
+                    <li><a href="#" class="hover:text-white transition">Pusat Informasi</a></li>
+                    <li><a href="#" class="hover:text-white transition">Laporkan Bug</a></li>
+                    <li><a href="#" class="hover:text-white transition">Donasi</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-8 text-gray-500 text-sm">
+            &copy; 2026 Sastra Bali Virtual Hub. Dibuat untuk melestarikan budaya Bali. <br>
+            <span class="text-amber-700 italic">"Ngajegang Bali saking Jero Ati"</span>
+        </div>
+    </footer>
+
+    <script>
+        // Simulasi Logika Transliterasi Sederhana (Prototype)
+        const input = document.getElementById('latinInput');
+        const output = document.getElementById('aksaraOutput');
+
+        const map = {
+            'om': 'ᬑᬁ',
+            'swastyastu': 'ᬲ᭄ᬯᬲ᭄ᬢ᭄ᬬᬲ᭄ᬢᬸ',
+            'bali': 'ᬩᬮᬶ',
+            'tiang': 'ᬢᬶᬬᬗ᭄',
+            'suksma': 'ᬲᬸᬓ᭄ᬱ᭄ᬫ'
+        };
+
+        input.addEventListener('input', (e) => {
+            const val = e.target.value.toLowerCase().trim();
+            if (val === '') {
+                output.innerText = 'ᬑᬁ ᬲ᭄ᬯᬲ᭄ᬢ᭄ᬬᬲ᭄ᬢᬸ';
+            } else {
+                // Mencocokkan kata kunci sederhana
+                let result = '';
+                const words = val.split(' ');
+                words.forEach(word => {
+                    if (map[word]) {
+                        result += map[word] + ' ';
+                    } else {
+                        result += '... ';
+                    }
+                });
+                output.innerText = result;
+            }
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
